@@ -8,7 +8,7 @@ body{
   color: white;
 }
 #ooi{
-  margin-left: 10%;
+  margin-left: 11%;
   text-align: center;
 }
 #lon{
@@ -24,11 +24,26 @@ body{
   display: block;
 }
 .card{
-  width: 60%;
+  width: 70%;
   height: 100px;
   font-size: 30px;
-  background-color: hsl(0, 3%, 23%);
+  background-color: hsl(0, 5%, 13%);
   color: azure;
   border-radius: 30px;
   margin: 15px auto;
+}
+
+.card:hover {
+  background-color: #89e913; 
+  color: black;
+}
+
+#ooi {
+  text-align: center; 
+  width: 60%; 
+  margin: 0 auto; 
+  background-color: #363333fe; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
