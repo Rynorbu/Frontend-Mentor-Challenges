@@ -1,5 +1,6 @@
 body{
   background-color: hsl(0, 0%, 12%);
+  background-attachment: fixed;
 }
 #img{
   border-radius: 50%;
@@ -42,7 +43,7 @@ body{
   text-align: center; 
   width: 45%; 
   margin: 0 auto; 
-  background-color: #2d2b2bfe; 
+  background-color: #353232fe; 
   padding: 2px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
