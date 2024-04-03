@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <p>Value 1: <input type="number" id="value1"></p>
+    <p>Value 2: <input type="number" id="value2"></p>
+
+    <div>
+        <button id="add">
+            add
+        </button>
+    
+        <button id="mul">
+            multiply
+        </button>
+    
+        <button id="sub">
+            Subtract
+        </button>
+    
+        <button id="div">
+            Divide
+        </button>
+    </div>
+
+    <p id="result">Answer is:</p>
+    
+
+    <script>
+        // for id value 1
+        const value1button = document.getElementById('value1')
+        value1button.addEventListener('click', consolevalue1);
+
+        function consolevalue1(){
+            console.log("value1 clicked") 
+        }   
+
+        // result
+        const result1 = document.getElementById('result');
+
+        // for id value2
+        const value2button = document.getElementById('value2');
+        value2button.addEventListener('click', consolevalue2);
+
+        function consolevalue2(){
+            console.log("value2 clicked") 
+        }   
+
+
+        // for add button
+        const addButton = document.getElementById('add');
+        addButton.addEventListener('click', consoleadd);
+
+        function consoleadd(){
+            const value1 = parseFloat(value1button.value);
+            const value2 = parseFloat(value2button.value);
+            const product = value1 + value2;
+            result.textContent = "Answer is: " + product;
+        } 
+
+
+        // for mul button
+        const mulButton = document.getElementById('mul');
+        mulButton.addEventListener('click', consolemul);
+
+        function consolemul(){
+            console.log("mul clicked") 
+            const value1 = parseFloat(value1button.value);
+            const value2 = parseFloat(value2button.value);
+            const product = value1 * value2;
+            result.textContent = "Answer is: " + product;
+        } 
+
+        // for sub button
+        const subButton = document.getElementById('sub');
+        subButton.addEventListener('click', consolesub);
+
+        function consolesub(){
+            console.log("sub clicked") 
+            const value1 = parseFloat(value1button.value);
+            const value2 = parseFloat(value2button.value);
+            const product = value1 - value2;
+            result.textContent = "Answer is: " + product;
+        }
+
+        // for div button
+        const divButton = document.getElementById('div');
+        divButton.addEventListener('click', consolediv);
+
+        
+        function consolediv(){
+            console.log("div clicked")
+            const value1 = parseFloat(value1button.value);
+            const value2 = parseFloat(value2button.value);
+            const product = value1 / value2;
+            result.textContent = "Answer is: " + product;
+        } 
+    </script>
+</body>
+</html>
